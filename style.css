@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+.container {
+  position: relative;
+}
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  border-radius: 5px;
+}
+header {
+  font-weight: 700;
+  font-size: 12px;
+}
+.text1 {
+  color: white;
+  font-weight: 400;
+  font-size: 18px;
+}
+.text2 {
+  color: white;
+  font-weight: 700;
+  font-size: 24px;
+}
+.flex_area {
+  display: flex;
+  justify-content: center;
+  gap: 0.5vw;
+}
+.flex_box {
+  width: 54px;
+  border-radius: 8px;
+}
+#day,
+#hour,
+#min,
+#sec {
+  background: white;
+  color: #404040;
+  font-size: 24px;
+  font-weight: 700;
+  border-radius: 8px 8px 0 0;
+}
+.flex_box_text {
+  color: white;
+  font-size: 9px;
+  background: #404040;
+  border-radius: 0 0 8px 8px;
+  padding: 5px 0 5px 0;
+}
+@media only screen and (min-width: 700px) {
+    header {
+      font-size: 3vw;
+    }
+    .text1 {
+      font-size: 4.5vw;
+    }
+    .text2 {
+      font-size: 6vw;
+    }
+    .flex_box {
+      width: 13.5vw;
+    }
+    #day,
+    #hour,
+    #min,
+    #sec {
+      font-size: 6vw;
+    }
+    .flex_box_text {
+      font-size: 2.25vw;
+    }
+  }
+@media only screen and (min-width: 1000px) {
+  img {
+    width: 50%;
+  }
+  header {
+    font-size: 2vw;
+  }
+  .text1 {
+    font-size: 3vw;
+  }
+  .text2 {
+    font-size: 4vw;
+  }
+  .flex_box {
+    width: 9vw;
+  }
+  #day,
+  #hour,
+  #min,
+  #sec {
+    font-size: 4vw;
+  }
+  .flex_box_text {
+    font-size: 1.5vw;
+  }
+}
